@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson Gonzalez - Desafio APIs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="enfasis">
+        <hr>    
+        <h1 class="title">Conversor de monedas Nacional.</h1>
+        <hr>
+    </div>
+    <div class="interaccion">
+        <h1 class="title">Pesos CLP</h1>
+        <input type="number" value="0" name="valor" id="valor" placeholder="ingrese monto">
+        <h4 class="subtitle">Moneda a convertir:</h4>
+        <div id="selector">
+
+        </div>
+        <button type="button" type="submit" id="calcular">Calcular</button> 
+        <div class="resultado">
+            Resultado: <span id="resultado">$ </span>
+        </div>    
+    </div>
+
+</div>
+<div>
+    <canvas id="miGrafico"></canvas>
+</div>
+
+
+<script src="assets/js/index.js"></script>    
+
+</body>
+</html>
