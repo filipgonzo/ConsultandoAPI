@@ -43,7 +43,7 @@ async function construyeSelect(){
 // grafico
 
 function dibujaGrafico(fechas, valores){
-    const ctx = document.querySelector('#miGrafico');
+    const ctx = document.querySelector('#grafico');
     
     const data = {
         labels: fechas,
@@ -51,7 +51,7 @@ function dibujaGrafico(fechas, valores){
         label: 'Historico',
         data: valores,
         fill: false,
-        borderColor: 'rgb(75, 192, 192)',
+        borderColor: 'rgb(0, 0, 0)',
         tension: 0.1
     }]
 };
@@ -68,9 +68,9 @@ botonCalcular.addEventListener('click', async function(){
     const valor = document.querySelector('#valor').value;
     tasaYMoneda = document.querySelector('#moneda').value.split('-');
     
-    const valorConvertido = valor / tasaYMoneda[1];
-    const spanResultado = document.querySelector ('#resultado');
-    spanResultado.innerHTML = valorConvertido.toFixed(3);
+    const valorCalculado = valor / tasaYMoneda[1];
+    const Resultado = document.querySelector ('#resultado');
+    Resultado.innerHTML = valorCalculado.toFixed(3);
   
     const codigoMoneda = tasaYMoneda[0];
     const fechaActual = new Date();
